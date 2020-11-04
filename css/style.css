@@ -5,6 +5,7 @@
 }
 a, i {
   color: #C1C3C6;
+  text-decoration: none;
 }
 a:hover, a:hover i{
   color: #ffff;
@@ -14,11 +15,14 @@ a:hover, a:hover i{
 /* liste verticali */
 .vertical_list {
   list-style-type: none;
-  padding: 20px 0;
+  padding: 10px 0
 }
 .vertical_list li {
   padding: 5px 20px;
   font-size: 15px;
+}
+.vertical_list li a {
+  text-decoration: none;
 }
 .vertical_list li:hover a, .vertical_list li:hover i{
   text-decoration: none;
@@ -26,13 +30,24 @@ a:hover, a:hover i{
 }
 /* /liste verticali */
 /* action */
-.action {
+.action_br_lf {
   border-left: 1px solid #1DB954;
 }
 .action a, .action i {
   color: #ffff;
 }
 /* action */
+/* button */
+.btn {
+  padding: 20px 40px;
+  background-color: rgb(0, 0, 0, 0.4);
+  border: 1px solid #ffff;
+  border-radius: 40px 40px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/*/ button */
 /*/ utilitis */
 .wrapper {
   width: 100%;
@@ -57,18 +72,28 @@ main {
   background-color: #000000;
   overflow-y: hidden;
 }
+/* logo */
 #logo {
-  padding: 0 20px;
+  padding: 0 20px 10px 20px;
 }
 #logo img {
   width: 60%;
 }
+/*/ logo */
+/* menu */
 .menu_nav .vertical_list li i {
   width: 25px;
   font-size: 20px;
 }
+/*/ menu */
+/* playlist */
 .playlist {
   padding: 0 20px;
+}
+.playlist h3 {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #ffff;
 }
 .playlist > a {
   line-height: 20px;
@@ -85,26 +110,73 @@ main {
 .playlist .vertical_list li {
   padding: 5px 0;
 }
+/* /playlist */
+/* download */
 .download {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 5px 20px;
 }
+.download a {
+  padding-bottom: 10px;
+}
+.download a i {
+  font-size: 10px;
+  margin-right: 5px;
+  padding: 2.5px 5px;
+  border: 1px solid #C1C3C6;
+  border-radius: 50%;
+}
+.download p {
+  padding-top: 10px;
+  border-top: 1px solid #C1C3C6;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #ffff;
+}
+.download p i {
+  font-size: 25px;
+  margin-right: 5px;
+}
+/* /download */
 /*/ barra laterale nav main-nav */
 /* main-content */
 .main_content {
   width: calc(100% - 250px);
   height: 100%;
+  padding: 20px;
   background-color: rgb(12, 16, 22);
   overflow-y: scroll;
 }
 #upgrade_row {
   position: fixed;
   top: 0;
+  right: 0;
+  width: calc(100% - 250px);
+  padding: 20px 30px;
+  text-align: right;
   background-color: rgb(0, 0, 0, 0.4);
   z-index: 3;
 }
+.menu_content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 90px;
+}
+.menu_content li {
+  list-style-type: none;
+  padding: 10px;
+}
+.menu_content li a {
+  text-transform: uppercase;
+}
+
 /* /main-content */
 /* /main */
 
