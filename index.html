@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- /Latest compiled and minified CSS -->
     <!-- il nostro foglio di stile -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /il nostro foglio di stile -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+    <!-- /font awesome -->
+    <!-- font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font google -->
     <title>Spotify</title>
   </head>
   <body>
@@ -13,14 +22,50 @@
       <!-- main -->
       <main>
         <nav class="main_nav">
-          <div class="logo">
+          <div id="logo">
             <img src="img/spotify-logo-white.png" alt="">
           </div>
           <div class="menu_nav">
-            <ul>
-              <li><a href="#">Menu</a></li>
+            <ul class="vertical_list">
+              <li class="action">
+                <a href="#">
+                  <i class="fas fa-home"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-search"></i>
+                  Cerca
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-grip-lines-vertical"><span>\</span></i>
+                  La tua libreria
+                </a>
+              </li>
             </ul>
 
+          </div>
+          <div class="playlist">
+            <h4 class="text-uppercase">Playlist</h4>
+            <a href="#">
+              <i class="fas fa-plus-square"></i>Crea Playlist
+            </a>
+            <ul class="vertical_list">
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+              <li><a href="#">Nome playlist</a></li>
+            </ul>
+          </div>
+          <div class="download">
+            <a href="#"><i class="fas fa-long-arrow-alt-down"></i>Installa app</a>
+            <p>John Doe</p>
           </div>
         </nav>
         <section class="main_content">

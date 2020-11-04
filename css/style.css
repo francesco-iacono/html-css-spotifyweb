@@ -3,10 +3,43 @@
   margin: 0;
   padding: 0;
 }
+a, i {
+  color: #C1C3C6;
+}
+a:hover, a:hover i{
+  color: #ffff;
+  text-decoration: none;
+}
+/* utilitis */
+/* liste verticali */
+.vertical_list {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.vertical_list li {
+  padding: 5px 20px;
+  font-size: 15px;
+}
+.vertical_list li:hover a, .vertical_list li:hover i{
+  text-decoration: none;
+  color: #ffff;
+}
+/* /liste verticali */
+/* action */
+.action {
+  border-left: 1px solid #1DB954;
+}
+.action a, .action i {
+  color: #ffff;
+}
+/* action */
+/*/ utilitis */
 .wrapper {
   width: 100%;
   height: 100vh;
   color: #C1C3C6;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 /* main */
 main {
@@ -17,14 +50,46 @@ main {
 }
 /* barralaterale nav main-nav */
 .main_nav {
+  position: relative;
   width: 250px;
   height: 100%;
-  padding: 20px;
+  padding-top: 20px;
   background-color: #000000;
   overflow-y: hidden;
 }
-.logo img {
+#logo {
+  padding: 0 20px;
+}
+#logo img {
   width: 60%;
+}
+.menu_nav .vertical_list li i {
+  width: 25px;
+  font-size: 20px;
+}
+.playlist {
+  padding: 0 20px;
+}
+.playlist > a {
+  line-height: 20px;
+  font-size: 18px;
+}
+.playlist i {
+  font-size: 40px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.playlist ul {
+  overflow-y: scroll;
+}
+.playlist .vertical_list li {
+  padding: 5px 0;
+}
+.download {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5px 20px;
 }
 /*/ barra laterale nav main-nav */
 /* main-content */
@@ -35,13 +100,20 @@ main {
   overflow-y: scroll;
 }
 #upgrade_row {
+  position: fixed;
+  top: 0;
   background-color: rgb(0, 0, 0, 0.4);
+  z-index: 3;
 }
 /* /main-content */
 /* /main */
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 90px;
   background-color: #1C1C1C;
+  z-index: 4;
 }
