@@ -16,10 +16,8 @@ a:hover, a:hover i{
 /* liste verticali */
 .vertical_list {
   list-style-type: none;
-  padding: 10px 0;
 }
 .vertical_list li {
-  padding: 5px 20px;
   font-size: 15px;
 }
 .vertical_list li a {
@@ -38,6 +36,17 @@ a:hover, a:hover i{
   color: #ffff;
 }
 /* action */
+/* button */
+.btn {
+  padding: 20px 40px;
+  background-color: rgb(0, 0, 0, 0.4);
+  border: 1px solid #ffff;
+  border-radius: 40px 40px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/*/ button */
 /*/ utilitis */
 .wrapper {
   width: 100%;
@@ -55,30 +64,25 @@ main {
 }
 /* barralaterale nav main-nav */
 .main_nav {
+  position: relative;
   width: 250px;
   height: 100%;
-  min-height: 450px;
   padding-top: 20px;
   background-color: #000000;
   overflow-y: hidden;
 }
-#top_nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: calc(100% - 90px);
-  overflow: hidden;
-}
 /* logo */
-#logo_icon {
-  visibility: hidden;
-  font-size: 25px;
-}
 #logo {
   padding: 0 20px 10px 20px;
 }
 #logo img {
   width: 60%;
+}
+#logo:first-child a {
+  visibility: visible;
+}
+#logo:last-child a {
+  visibility: hidden;
 }
 /*/ logo */
 /* menu */
@@ -90,7 +94,6 @@ main {
 /* playlist */
 .playlist {
   padding: 0 20px;
-  overflow: hidden;
 }
 .playlist h3 {
   text-transform: uppercase;
@@ -107,27 +110,28 @@ main {
   padding-right: 5px;
 }
 .playlist ul {
-  /* flex-shrink: 1; */
-  height: 75%;
   overflow-y: auto;
 }
 .playlist .vertical_list li {
   padding: 5px 0;
 }
 /* /playlist */
-#bottom_nav {
-  width: 100%;
-  height: 90px;
-}
 /* download */
 .download {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 5px 20px;
+}
+.download a {
+  padding-bottom: 10px;
 }
 .download a i {
   font-size: 10px;
   margin-right: 5px;
-  margin-bottom: 10px;
   padding: 2.5px 5px;
   border: 1px solid #C1C3C6;
   border-radius: 50%;
@@ -157,40 +161,27 @@ main {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 250px);
-  height: 90px;
-  line-height: 45px;
+  width: calc(100% - 50px);
   padding: 20px 30px;
   text-align: right;
   background-color: rgb(0, 0, 0, 0.4);
   z-index: 3;
 }
-#upgrade_row a {
-  padding: 20px 40px;
-  border: 1px solid #ffff;
-  border-radius: 40px 40px;
-  color: #ffff;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
 .menu_content ul {
   display: flex;
   justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 90px;
 }
 .menu_content li {
   list-style-type: none;
-  padding: 8px 5px;
+  padding: 10px;
 }
 .menu_content li a {
   text-transform: uppercase;
-  font-size: 9px;
 }
-.menu_content ul:first-child li::before {
 
-}
 /* /main-content */
 /* /main */
 
@@ -204,114 +195,34 @@ footer {
   z-index: 4;
 }
 
+@media screen and (max-width: 780px) {
 
-/* media exrta XS */
-@media screen and (max-width: 350px) {
-
-  #upgrade_row a {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  /* /media exrta XS */
-
-}
-
-/* media XS */
-@media screen and (max-width: 750px) {
-
-  /* main_nav */
   .main_nav {
-    width: 35px;
+    width: 50px;
     text-align: center;
   }
-  #logo_icon {
+  #logo:first-child {
+    visibility: hidden;
+  }
+  #logo:last-child a {
     visibility: visible;
   }
-  #logo {
-    display: none;
-  }
-  .menu_nav span {
-    display: none;
+  .menu_nav a {
+    visibility: hidden;
   }
   .vertical_list {
     width: 100%;
     padding: 10px 0;
   }
   .vertical_list li {
-    padding: 10px 0;
+    padding: 0;
     font-size: 15px;
   }
-  .menu_nav i {
-    width: 100%;
-    visibility: visible;
-  }
-  .playlist {
-    display: none;
-  }
-  .download {
-    display: none;
-  }
-  /* /main_nav */
-  /* main_content */
   .main_content {
-    width: calc(100% - 35px);
-    padding: 0;
+    width: calc(100% - 50px);
   }
   #upgrade_row {
-    width: calc(100% - 35px);
-    padding: 20px 15px;
-  }
-  .menu_content ul {
-    flex-wrap: wrap;
-  }
-  .menu_content li {
-    width: calc(100% / 4 );
-    padding: 8px 3px;
-  }
-  .menu_content li a {
-    font-size: 10px;
+    width: calc(100% - 50px);
+
   }
 }
-/*/ media XS */
-
-/* media SM */
-@media screen and (min-width: 750px) {
-
-  #logo_icon {
-    display: none;
-  }
-  .menu_content ul {
-    flex-wrap: wrap;
-  }
-  .menu_content li {
-    width: calc(100% / 3 - 10px);
-  }
-  .menu_content li a {
-    font-size: 12px;
-  }
-
-}
-/* /media SM */
-
-/* media MD */
-@media screen and (min-width: 970px) {
-
-  .menu_content li {
-    width: calc(100% / 5);
-  }
-  .menu_content li a {
-    font-size: 14px;
-  }
-
-}
-/*/ media MD */
-
-/* media LG */
-@media screen and (min-width: 1170px) {
-
-  .menu_content li {
-    width: calc(90% / 6 - 3px);
-  }
-
-}
-/* /media LG */

@@ -19,66 +19,89 @@
       <!-- main -->
       <main>
         <!-- barra laterale -->
+        <!-- top_nav -->
         <nav class="main_nav">
-          <!-- logo -->
-          <div id="logo">
-            <a href="#">
-              <img src="img/spotify-logo-white.png" alt="">
-            </a>
-          </div>
-          <!-- /logo -->
-          <!-- menu nav -->
-          <div class="menu_nav">
-            <ul class="vertical_list">
-              <li class="action action_br_lf">
-                <a href="#">
-                  <i class="fas fa-home"></i>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-search"></i>
-                  Cerca
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-grip-lines-vertical"><span>\</span></i>
-                  La tua libreria
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!--/ menu nav -->
-          <!-- Playlist -->
-          <div class="playlist">
-            <h3>Playlist</h3>
-            <a href="#">
-              <i class="fas fa-plus-square"></i>Crea Playlist
-            </a>
-            <ul class="vertical_list">
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-              <li><a href="#">Nome playlist</a></li>
-            </ul>
-          </div>
-          <!-- /Playlist -->
-          <!-- download -->
-          <div class="download">
-            <a href="#"><i class="fas fa-long-arrow-alt-down"></i>Installa app</a>
-            <p><i class="fas fa-user-circle"></i>John Doe</p>
-          </div>
-          <!-- /download -->
+          <section id="top_nav">
+            <!-- logo -->
+            <!-- logo icon -->
+            <div id="logo_icon">
+              <a href="#">
+                <i class="fab fa-spotify"></i>
+              </a>
+            </div>
+            <!-- /logo icon -->
+            <!-- logo img -->
+            <div id="logo">
+              <a href="#">
+                <img src="img/spotify-logo-white.png" alt="">
+              </a>
+            </div>
+            <!-- logo img -->
+            <!-- /logo -->
+            <!-- menu nav -->
+            <div class="menu_nav">
+              <ul class="vertical_list">
+                <li class="action action_br_lf">
+                  <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                    <span>Cerca</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-grip-lines-vertical"></i>
+                    <span>La tua libreria</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--/ menu nav -->
+            <!-- Playlist -->
+            <div class="playlist">
+              <h3>Playlist</h3>
+              <a href="#">
+                <i class="fas fa-plus-square"></i>Crea Playlist
+              </a>
+              <ul class="vertical_list">
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+                <li><a href="#">Nome playlist</a></li>
+              </ul>
+            </div>
+            <!-- /Playlist -->
+          </section>
+          <!-- /top_nav -->
+          <!-- bottom nav -->
+          <section id="bottom_nav">
+            <!-- download -->
+            <div class="download">
+              <a href="#">
+                <i class="fas fa-long-arrow-alt-down"></i>
+                Installa app
+              </a>
+              <p>
+                <i class="fas fa-user-circle"></i>
+                John Doe
+              </p>
+            </div>
+            <!-- /download -->
+          </section>
+          <!-- /bottom nav -->
         </nav>
         <!-- /barra laterale -->
         <section class="main_content">
           <div id="upgrade_row">
-            <button class="btn" type="button" name="button">Effetua l'Upgrade</button>
+            <a href="#">Effetua l'Upgrade</a>
           </div>
           <div class="menu_content">
             <ul>
