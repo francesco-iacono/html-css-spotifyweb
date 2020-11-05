@@ -71,7 +71,7 @@ main {
 }
 /* logo */
 #logo_icon {
-  visibility: hidden;
+  display: none;
   font-size: 25px;
 }
 #logo {
@@ -153,8 +153,9 @@ main {
   background-color: rgb(12, 16, 22);
   overflow-y: auto;
 }
-.main_content h3 {
+.main_content h2, .main_content h3 {
   padding-bottom: 10px;
+  color: #ffff;
 }
 #upgrade_row {
   position: fixed;
@@ -169,12 +170,17 @@ main {
   z-index: 3;
 }
 #upgrade_row a {
+  margin-right: 2%;
   padding: 20px 40px;
   border: 1px solid #ffff;
   border-radius: 40px 40px;
   color: #ffff;
   text-transform: uppercase;
   font-weight: bolder;
+}
+#upgrade_row a:hover {
+  padding: 25px 50px;
+  font-size: 20px;
 }
 .menu_content ul {
   display: flex;
@@ -200,22 +206,32 @@ main {
   text-transform: uppercase;
   font-size: 13px;
 }
+.row_albums {
+  padding: 10px 0;
+}
 .block_music {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 .music_item {
-  width: calc(100% / 6);
+  position: relative;
+  width: calc(100% / 6 - 30px);
   min-width: 160px;
-  padding: 10px;
+  height: 100%;
+  margin-right: 15px;
   text-align: center;
+  cursor: pointer;
+}
+.block_music:last-child .music_item:last-child {
+  margin-right: 0;
 }
 .img_music {
   position: relative;
   width: 100%;
 }
 .artist_cover {
+  display: flex;
   width: 100%;
   height: 100%;
 }
@@ -245,6 +261,12 @@ main {
   width: 100%;
   padding: 10px;
 }
+.most_listened img {
+  border-radius: 50%;
+}
+.most_listened .img_music:hover .layover_img {
+  border-radius: 50%;
+}
 /* /main-content */
 /* /main */
 
@@ -256,6 +278,10 @@ footer {
   height: 90px;
   background-color: #1C1C1C;
   z-index: 4;
+}
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -279,7 +305,7 @@ footer {
     text-align: center;
   }
   #logo_icon {
-    visibility: visible;
+    display: block;
   }
   #logo {
     display: none;
@@ -314,9 +340,13 @@ footer {
     width: calc(100% - 35px);
     padding: 20px 15px;
   }
+  .block_music {
+    justify-content: space-between;
+  }
   .music_item {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 30px);
     min-width: 140px;
+    margin: 0;
   }
 }
 /*/ media XS */
@@ -324,22 +354,12 @@ footer {
 /* media SM */
 @media screen and (max-width: 970px) {
 
-  #logo_icon {
-    display: none;
+  .block_music {
+    justify-content: space-between;
   }
   .music_item {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 30px);
   }
 
 }
 /* /media SM */
-
-/* media MD */
-@media screen and (min-width: 970px) {
-
-  #logo_icon {
-    display: none;
-  }
-
-}
-/*/ media MD */
