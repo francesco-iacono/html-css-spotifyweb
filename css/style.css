@@ -39,6 +39,26 @@ a:hover, a:hover i{
 }
 /* action */
 /*/ utilitis */
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(12, 16, 22);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C1C3C6;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+/* /scrollbar */
+
+/* wrapper!!!!!!!!!!!!!!!!! */
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -351,10 +371,17 @@ footer {
   color: #ffff;
   cursor: pointer;
 }
+#action_play {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 38px;
+}
 #action_play i{
+  width: 40px;
   font-size: 30px;
 }
-#action_play i:hover {
+#action_play:hover i {
   font-size: 32px;
 }
 .bottom_palyer {
