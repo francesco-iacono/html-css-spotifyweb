@@ -354,9 +354,9 @@ footer {
 #action_play i{
   font-size: 30px;
 }
-/* #action_play i:hover {
+#action_play i:hover {
   font-size: 32px;
-} */
+}
 .bottom_palyer {
   display: flex;
   justify-content: center;
@@ -401,6 +401,7 @@ footer {
   align-items: center;
   width: 250px;
   height: 100%;
+  padding: 1%;
 }
 .audio_control ul {
   display: flex;
