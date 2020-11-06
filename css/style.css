@@ -200,7 +200,7 @@ main {
   font-weight: bolder;
 }
 #upgrade_row a:hover {
-  padding: 25px 50px;
+  padding: 21px 41px;
   font-size: 20px;
 }
 .menu_content ul {
@@ -575,6 +575,9 @@ footer {
   #upgrade_row a {
     padding: 10px 15px;
     font-size: 14px;
+  }
+  #upgrade_row a:hover {
+    padding: 11px 16px;
   }
   .music_item {
     width: 100%;
