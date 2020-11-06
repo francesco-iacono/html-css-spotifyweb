@@ -39,6 +39,7 @@ a:hover, a:hover i{
 }
 /* action */
 /*/ utilitis */
+
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -232,6 +233,10 @@ main {
 }
 .row_albums h2 {
   padding-left: 0.5%;
+}
+.row_albums p {
+  padding-left: 0.5%;
+  padding-bottom: 20px;
 }
 .block_music {
   display: flex;
